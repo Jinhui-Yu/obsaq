@@ -34,7 +34,7 @@ Step 2: install using pip::
 
     $ git clone https://github.com/envdes/obsaq
     $ cd obsaq
-    $ python setup.py obsaq
+    $ python setup.py install
 
 How to use it?
 --------------
