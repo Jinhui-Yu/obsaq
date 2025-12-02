@@ -126,7 +126,7 @@ class meta:
                 return self.final_sites
             
     def download_sites(self, port, year=1995, output_dir='data/prep_obs_data', log=False):
-        
+    
         os.makedirs(output_dir, exist_ok=True)
         
         headers = {
@@ -137,7 +137,13 @@ class meta:
             ids = np.unique(self.final_sites['site_id'].values)
         except AttributeError:
             ids = [self.final_sites['site_id']]
-        
+            
+        dfs = list(map(lambda site_id: self._download_single_site(port, site_id, year, output_dir, headers, log), ids))
+        dfs = list(map(fix_columns, dfs))
+        merged_df = reduce(lambda left, right: pd.merge(left, right, on=['Date','Time'], how='outer'), dfs)
+        self.merged_data = merged_df
+        return merged_df
+
         for id in ids:
             if port == 'aurn':
                 url_prefix = 'https://uk-air.defra.gov.uk/datastore/data_files/site_data'
