@@ -13,4 +13,3 @@ No valid pollutant values were found. This may happen when the selected site has
 An error occurred during data cleaning. The package outputs the name of the problematic file along with the specific error message each time an error is encountered, enabling targeted troubleshooting.
 • No CSV files were successfully processed
 No output file could be generated. This may indicate that none of the CSV files were recognized as valid, or that all files failed to be cleaned and merged successfully.
-<img width="451" height="621" alt="image" src="https://github.com/user-attachments/assets/1f3d67a0-cf22-40ae-befe-47120a00dc1c" />
