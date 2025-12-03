@@ -50,7 +50,7 @@ Data cleaning and merging
       $ odc.obsaq_data_clean(CSV_DIR='/Users/download_csv',#your input file folder
        OUTPUT_FILE='/Users/obsaq_data_clean_test.csv'#your output file)
 
-View instructions `here <https://your-domain.com/instructions>`_.
+View instructions `here <https://github.com/Jinhui-Yu/obsaq/blob/main/obsaq_data_clean_instructions.md>`_.
 
 How to ask for help
 -------------------
