@@ -42,6 +42,14 @@ Python
 
 Please check the `tutorial <https://envdes.github.io/obsaq/>`_ for more information.
 
+Data cleaning and merging
+--------------
+(optional) Use "obsaq_data_clean" to achieve that!
+
+     $ import obsaq.obsaq_data_clean as odc
+     $ odc.obsaq_data_clean(CSV_DIR='/Users/download_csv',#your input file folder
+       OUTPUT_FILE='/Users/obsaq_data_clean_test.csv'#your output file)
+
 How to ask for help
 -------------------
 The `GitHub issue tracker <https://github.com/envdes/obsaq/issues>`_ is the primary place for bug reports. 
