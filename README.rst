@@ -44,15 +44,13 @@ Please check the `tutorial <https://envdes.github.io/obsaq/>`_ for more informat
 
 Data cleaning and merging
 --------------
-(optional) Use "obsaq_data_clean" to achieve that!
+(optional) Use "obsaq_data_clean" to achieve that!::
 
-    $ git clone https://github.com/envdes/obsaq
-    $ cd obsaq
-    $ python setup.py install
-
-    ```$ import obsaq.obsaq_data_clean as odc
-       $ odc.obsaq_data_clean(CSV_DIR='/Users/download_csv',#your input file folder
+      $ import obsaq.obsaq_data_clean as odc
+      $ odc.obsaq_data_clean(CSV_DIR='/Users/download_csv',#your input file folder
        OUTPUT_FILE='/Users/obsaq_data_clean_test.csv'#your output file)
+
+View instructions `here <https://your-domain.com/instructions>`_.
 
 How to ask for help
 -------------------
