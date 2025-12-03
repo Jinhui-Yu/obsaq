@@ -1,4 +1,4 @@
-<img width="451" height="621" alt="image" src="https://github.com/user-attachments/assets/9eae71e5-d57d-4c9e-8b3c-ca021ee0bbbe" />
+
 # **Instructions for the added mode - data cleaning and merging**
 This update resolves several issues present in the original package. The previous version produced non-standard CSV files after downloading, which contained numerous invisible or corrupted characters. As a result, users frequently encountered severe errors during file reading, cleaning, and merging. Common problems included unreadable files, non-unique column names, metadata interfering with header recognition, and non-standard site name columns.
 To address these issues, this update introduces a dedicated data cleaning and merging module (obsaq_data_clean). Its purpose is to re-encode and restructure the raw CSV files downloaded from the AURN website across different monitoring sites. The module performs site information extraction, empty row/column removal, table structure resetting, row/column reorganization, and consolidated output generation.
