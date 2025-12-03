@@ -44,7 +44,7 @@ Please check the `tutorial <https://envdes.github.io/obsaq/>`_ for more informat
 
 Data cleaning and merging
 --------------
-(optional) Use "obsaq_data_clean" to achieve that!::
+(optional) Use "obsaq_data_clean" to achieve that::
 
       $ import obsaq.obsaq_data_clean as odc
       $ odc.obsaq_data_clean(CSV_DIR='/Users/download_csv',#your input file folder
